@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".Main2Activity"
+    tools:showIn="@layout/app_bar_main2">
+
+    <TextView
+        android:id="@+id/name_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:paddingTop="16dp"
+        android:text="Name :" />
+
+    <EditText
+        android:id="@+id/name_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="88dp"
+        app:layout_constraintLeft_toRightOf="@+id/name_Tv"
+        app:layout_constraintStart_toEndOf="@id/name_Tv"
+        app:layout_constraintTop_toTopOf="@id/name_Tv" />
+
+
+    <TextView
+        android:id="@+id/phoneNumber_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:paddingTop="16dp"
+        android:text="PhoneNumber :"
+        app:layout_constraintTop_toBottomOf="@+id/name_Tv" />
+
+    <EditText
+        android:id="@+id/PhoneNumber_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="88dp"
+        android:layout_marginLeft="88dp"
+        app:layout_constraintLeft_toRightOf="@+id/phoneNumber_Tv"
+        app:layout_constraintStart_toStartOf="@id/name_et"
+        app:layout_constraintTop_toTopOf="@+id/phoneNumber_Tv"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteY="55dp" />
+
+    <TextView
+        android:id="@+id/Address_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:paddingTop="16dp"
+        android:text="Address :"
+        app:layout_constraintTop_toBottomOf="@+id/phoneNumber_Tv" />
+
+    <TextView
+        android:id="@+id/Address1_Tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="88dp"
+        app:layout_constraintLeft_toRightOf="@+id/Address_Tv"
+        app:layout_constraintStart_toEndOf="@id/Address1_Tv"
+        app:layout_constraintTop_toTopOf="@+id/Address_Tv"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/next_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Next"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Address_Tv" />
+
+    <FrameLayout
+        android:id="@+id/frame_container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</android.support.constraint.ConstraintLayout>

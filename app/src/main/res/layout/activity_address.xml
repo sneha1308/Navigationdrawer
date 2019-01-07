@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddressActivity">
+
+    <TextView
+        android:id="@+id/Address1_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:paddingTop="16dp"
+        android:text="Address 1 :" />
+
+    <EditText
+        android:id="@+id/Address1_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="88dp"
+        app:layout_constraintLeft_toRightOf="@+id/Address1_Tv"
+        app:layout_constraintTop_toTopOf="@id/Address1_Tv" />
+
+    <TextView
+        android:id="@+id/Address2_Tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:paddingTop="16dp"
+        android:text="Address 2:"
+        app:layout_constraintTop_toBottomOf="@+id/Address1_Tv" />
+
+    <EditText
+        android:id="@+id/Address2_et"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="88dp"
+        app:layout_constraintLeft_toRightOf="@+id/Address2_Tv"
+        app:layout_constraintTop_toTopOf="@id/Address2_Tv" />
+
+    <Button
+        android:id="@+id/submit_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:text="Submit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Address2_Tv" />
+
+
+</android.support.constraint.ConstraintLayout>
